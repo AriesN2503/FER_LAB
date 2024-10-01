@@ -1,12 +1,13 @@
 import React from "react";
 import { ListOrchids } from "./ListOfOrchids";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useState } from "react";
 import "./DetailsOrchid.scss";
 
 function Details() {
   const { id } = useParams();
   const orchid = ListOrchids.find((item) => item.Id === id);
+  const [showVideo, setShowVideo] = useState(false);
 
   if (!orchid) {
     return <div className="container text-center mt-5">No Details found!</div>;
@@ -38,6 +39,17 @@ function Details() {
               <p className="des">
                 <strong>Description:</strong> {orchid.description}
               </p>
+              <button className="video-btn" onClick={() => setShowVideo(!showVideo)}>
+                {showVideo ? "Hide Video" : "Show Video"}
+              </button>
+              {showVideo && (
+                <div className="video-container">
+                  <button className="close-button" onClick={() => setShowVideo(false)}>
+                    ✖
+                  </button>
+                  <iframe width="560" height="315" src={orchid.videoSrc} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                </div>
+              )}
             </div>
           </div>
         </div>

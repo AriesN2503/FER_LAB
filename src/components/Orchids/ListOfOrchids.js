@@ -9,6 +9,7 @@ export const ListOrchids = [
     origin: "Southeast Asia",
     category: "Bulbophyllum",
     description: "Known for its unusual flowers, Bulbophyllum orchids thrive in warm, humid environments. They are often found in tropical regions and are notable for their unique shapes and sizes.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "2",
@@ -20,6 +21,7 @@ export const ListOrchids = [
     origin: "Philippines",
     category: "Phalaenopsis",
     description: "One of the most popular orchids, Phalaenopsis, or 'moth orchids,' are known for their ease of care and long-lasting blooms, making them ideal for beginners.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "3",
@@ -31,6 +33,7 @@ export const ListOrchids = [
     origin: "Australia",
     category: "Dendrobium",
     description: "Dendrobium orchids are versatile and come in many varieties, ranging from large sprays of flowers to compact and delicate blooms.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "4",
@@ -42,6 +45,7 @@ export const ListOrchids = [
     origin: "Brazil",
     category: "Cattleya",
     description: "Known as the 'Queen of Orchids,' Cattleyas are renowned for their spectacular and fragrant flowers, often used in corsages and floral arrangements.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "5",
@@ -53,6 +57,7 @@ export const ListOrchids = [
     origin: "Colombia",
     category: "Oncidium",
     description: "Oncidiums are commonly called 'dancing lady' orchids due to their distinct, bright, and fluttery petals. They thrive in warm climates and need lots of light.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "6",
@@ -64,6 +69,7 @@ export const ListOrchids = [
     origin: "Thailand",
     category: "Vanda",
     description: "Vanda orchids are admired for their striking colors and large blooms. They are commonly used as show plants and are known for their unique aerial root systems.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "7",
@@ -75,6 +81,7 @@ export const ListOrchids = [
     origin: "China",
     category: "Cymbidium",
     description: "Cymbidium orchids are prized for their long-lasting flowers and are often used in floral arrangements. They prefer cooler temperatures compared to other orchids.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "8",
@@ -86,6 +93,7 @@ export const ListOrchids = [
     origin: "Brazil",
     category: "Miltonia",
     description: "Miltonia orchids, often called 'pansy orchids,' have large, flat flowers that resemble pansies. They are known for their vivid colors and patterns.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "9",
@@ -97,6 +105,7 @@ export const ListOrchids = [
     origin: "Brazil",
     category: "Zygopetalum",
     description: "Zygopetalum orchids are appreciated for their exotic, fragrant flowers, which often have striking color patterns. They are known to grow well in intermediate temperatures.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "10",
@@ -108,6 +117,7 @@ export const ListOrchids = [
     origin: "Asia",
     category: "Paphiopedilum",
     description: "Also known as 'slipper orchids,' Paphiopedilum orchids are known for their distinctive pouch-like flowers. They grow well in cooler environments.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "11",
@@ -119,6 +129,7 @@ export const ListOrchids = [
     origin: "Central America",
     category: "Brassia",
     description: "Brassia orchids are known as 'spider orchids' due to their long, thin petals. They thrive in warm, humid environments and often emit a spicy fragrance.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "12",
@@ -130,6 +141,7 @@ export const ListOrchids = [
     origin: "Asia",
     category: "Coelogyne",
     description: "Coelogyne orchids are known for their gracefully arching sprays of flowers. They grow in cool to intermediate conditions and are commonly found in the Himalayas.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "13",
@@ -141,6 +153,7 @@ export const ListOrchids = [
     origin: "Central America",
     category: "Lycaste",
     description: "Lycaste orchids have large, fragrant flowers and are known for their striking appearance. They are relatively easy to grow in temperate climates.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "14",
@@ -152,6 +165,7 @@ export const ListOrchids = [
     origin: "South America",
     category: "Catasetum",
     description: "Catasetum orchids are known for their unique sexual dimorphism, producing male and female flowers on separate plants. They grow best in warm, humid environments.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "15",
@@ -163,6 +177,7 @@ export const ListOrchids = [
     origin: "Madagascar",
     category: "Angraecum",
     description: "Angraecum orchids are best known for their star-shaped flowers and often bloom at night. They prefer warm, humid climates and are typically fragrant.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
   {
     Id: "16",
@@ -174,5 +189,6 @@ export const ListOrchids = [
     origin: "China",
     category: "Dendrobium",
     description: "Dendrobium nobile is a popular variety known for its abundant and vibrant flowers. It prefers cooler temperatures and bright light for optimal growth.",
+    videoSrc: "https://www.youtube.com/embed/_pBR0yCiOX4?si=J3J9D-avWl9aBPIc",
   },
 ];
