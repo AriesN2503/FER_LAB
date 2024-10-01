@@ -18,7 +18,7 @@ function Header({ toggleTheme }) {
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/special">
                 Special
               </Nav.Link>
               <Nav.Link as={Link} to="/contact">
