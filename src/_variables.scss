@@ -1,0 +1,42 @@
+.App {
+  &.light-theme {
+    --text-primary: #000000;
+    --text-secondary: #daf1de;
+    --theme-color-primary: #8eb69b;
+    --theme-color-secondary: #daf1de;
+    --bg-primary: #f0fff3;
+    --bg-secondary: #eeeeee;
+    --accent-primary: #096d54;
+    --details-card-bg: #f0fff3;
+
+    --bg-primary-rgb: 240, 255, 243;
+
+    --header-bg-color: rgba(var(--bg-primary-rgb), 0.85);
+  }
+
+  &.dark-theme {
+    --text-primary: #e0e0e0; // Light gray for primary text
+    --text-secondary: #b1f1d7; // Soft green for secondary text
+    --theme-color-primary: #4a8e75; // Darker shade of soft green
+    --theme-color-secondary: #b1f1d7; // Same as secondary text
+    --bg-primary: #121212; // Very dark gray
+    --bg-secondary: #1d1d1d; // Dark gray
+    --accent-primary: #3bffc4; // Darker teal
+    --details-card-bg: #206149;
+
+    --bg-primary-rgb: 18, 18, 18;
+
+    --header-bg-color: rgba(var(--bg-primary-rgb), 0.85);
+  }
+}
+
+// Usage of CSS variables for other components
+$text-primary: var(--text-primary);
+$text-secondary: var(--text-secondary);
+$theme-color-primary: var(--theme-color-primary);
+$theme-color-secondary: var(--theme-color-secondary);
+$bg-primary: var(--bg-primary);
+$bg-secondary: var(--bg-secondary);
+$accent-primary: var(--accent-primary);
+$header-bg-color: var(--header-bg-color);
+$details-card-bg: var(--details-card-bg);

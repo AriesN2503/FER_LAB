@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/Header/Header";
+import Orchids from "./components/Orchids/Orchids";
+import Details from "./components/Orchids/DetailsOrchid";
+import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./ScrollToTop";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.scss";
 
 function App() {
+  const [theme, setTheme] = useState("light-theme");
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light-theme" ? "dark-theme" : "light-theme"));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className={`App ${theme}`}>
+        <Header toggleTheme={toggleTheme} currentTheme={theme} />
+        <Routes>
+          <Route path="/" element={<Orchids />} />
+          <Route path="/details/:id" element={<Details />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,145 @@
+@import "../../_variables.scss";
+
+.header {
+  background-color: $header-bg-color;
+  padding: 0.5rem 2rem !important;
+  margin-bottom: 1.5rem;
+  position: fixed !important;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  & * {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $text-primary;
+  }
+
+  .title {
+    text-align: center;
+    font: {
+      size: 2.2rem;
+      weight: 700;
+    }
+    letter-spacing: 0.12rem;
+    font-style: italic;
+    color: $accent-primary;
+
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+
+  .navbar-toggler {
+    display: none;
+    color: $text-primary !important;
+  }
+}
+
+.link-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+
+  .active {
+    color: $text-primary !important;
+  }
+
+  .theme-toggle {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 0.3rem 0.5rem;
+    color: $text-primary;
+    background-color: $theme-color-primary;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    .icon {
+      font-size: 1.5rem;
+      color: $text-primary;
+    }
+
+    &:hover {
+      background-color: $theme-color-primary;
+      opacity: 80%;
+    }
+  }
+
+  a {
+    color: $text-primary;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+}
+
+.search {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid $theme-color-secondary;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #000000;
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+    outline: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding-bottom: 1rem !important;
+    .navbar-toggler {
+      display: block;
+      margin: auto;
+      color: $text-primary !important;
+      font-size: 0.5rem;
+    }
+
+    .navbar-collapse {
+      display: none;
+      width: 100%;
+
+      &.show {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    .title {
+      text-align: center;
+    }
+  }
+
+  #navbarScroll {
+    flex-direction: column;
+    align-items: center;
+
+    .link-items {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      padding-left: 1.5rem;
+
+      .theme-toggle {
+        margin-top: 1rem;
+      }
+    }
+
+    .search {
+      width: 50%;
+    }
+
+    form {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../_variables.scss";
+
+.footer {
+  background-color: $theme-color-primary;
+  padding: 0rem;
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0 !important;
+
+  .container {
+    height: auto;
+
+    a {
+      color: $text-primary;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $accent-primary;
+      }
+    }
+  }
+
+  .sec {
+    margin-bottom: 1rem !important;
+
+    i {
+      color: $text-secondary;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $accent-primary;
+      }
+    }
+  }
+
+  .content {
+    padding-top: 0;
+    background-color: $theme-color-primary;
+    p {
+      margin-bottom: 0;
+      background-color: $theme-color-primary;
+    }
+  }
+
+  .last {
+    background-color: $theme-color-primary;
+    filter: brightness(75%);
+
+    & * {
+      background-color: $theme-color-primary;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

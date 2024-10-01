@@ -1,0 +1,122 @@
+@import "../../_variables.scss";
+
+.content {
+  background-color: $bg-primary;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .banner-container {
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .title {
+    margin: 2.5rem 0 0rem 0;
+    font-weight: 700;
+    color: $accent-primary;
+  }
+
+  .line {
+    width: 40%;
+    height: 1px;
+    background-color: $accent-primary;
+    opacity: 40%;
+    margin: 0.5rem auto 2rem auto;
+  }
+
+  .display-card {
+    width: 90%;
+
+    .card1 {
+      margin-bottom: 2rem;
+    }
+  }
+  .card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    margin-bottom: 1rem;
+
+    .card-img-top {
+      overflow: hidden;
+
+      img {
+        height: 24rem;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transition: transform 0.3s;
+      }
+    }
+
+    .card-body {
+      background-color: $bg-secondary;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+
+      .infor {
+        .card-title {
+          color: $text-primary;
+          font-weight: 700;
+          letter-spacing: 0.05rem;
+          margin-bottom: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          transition: color 0.3s;
+          cursor: default;
+        }
+
+        .rating {
+          color: $text-primary;
+          font-weight: 700;
+        }
+      }
+
+      .origin {
+        color: $text-primary;
+        margin-bottom: 2rem;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .btn {
+        background-color: $theme-color-primary;
+        font-size: 1rem;
+        letter-spacing: 0.08rem;
+        font-weight: 600;
+        transition: opacity 0.3s;
+        width: 80%;
+        align-self: center;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+      .card-img-top img {
+        transform: scale(1.05);
+      }
+
+      .card-body .infor .card-title {
+        color: $accent-primary;
+      }
+    }
+  }
+}
