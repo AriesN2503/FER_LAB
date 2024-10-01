@@ -1,0 +1,138 @@
+@import "../../_variables.scss";
+
+.contact-container {
+  width: 90%;
+  padding: 3rem 0;
+  padding-top: 7rem;
+  background-color: $bg-primary;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  h1 {
+    color: $accent-primary;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $text-primary;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .contact-form {
+    flex: 1;
+    background-color: $bg-secondary;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: $text-primary;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid $theme-color-primary;
+        border-radius: 10px;
+        background-color: $bg-primary;
+        color: $text-primary;
+
+        &:focus {
+          outline: none;
+          border-color: $accent-primary;
+        }
+      }
+
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+    }
+
+    .submit-btn {
+      background-color: $theme-color-primary;
+      color: $text-secondary;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $theme-color-primary;
+      }
+    }
+  }
+
+  .contact-info {
+    flex: 1;
+    background-color: $bg-secondary;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+
+    & * {
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      color: $accent-primary;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    p {
+      color: $text-primary;
+      margin-bottom: 2rem;
+      text-align: left;
+
+      strong {
+        color: $theme-color-primary;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-container {
+    padding-top: 9rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header/Header";
 import Orchids from "./components/Orchids/Orchids";
 import Details from "./components/Orchids/DetailsOrchid";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Orchids />} />
           <Route path="/details/:id" element={<Details />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
