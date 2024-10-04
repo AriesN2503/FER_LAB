@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import Orchids from "./components/Orchids/Orchids";
 import Details from "./components/Orchids/DetailsOrchid";
@@ -10,11 +10,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
 function App() {
-  const [theme, setTheme] = useState("light-theme");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light-theme");
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light-theme" ? "dark-theme" : "light-theme"));
   };
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
     <Router>
