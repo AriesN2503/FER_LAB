@@ -1,5 +1,5 @@
 import React from "react";
-import { ListOrchids } from "./ListOfOrchids";
+import { ListOrchids } from "../ListOfOrchids";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import "./DetailsOrchid.scss";

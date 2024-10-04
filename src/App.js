@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import Orchids from "./components/Orchids/Orchids";
-import Details from "./components/Orchids/DetailsOrchid";
+import Details from "./components/Orchids/DetailsOrchid/DetailsOrchid.js";
 import Contact from "./components/Contact/Contact";
 import Special from "./components/Orchids/SpecialOrchid";
 import Footer from "./components/Footer/Footer";
